@@ -2,9 +2,12 @@
 #include<string>
 using namespace std;
 class Teacher{
-private:
+private:                  //Data and methods accessible inside class
         double salary;
 public:                   //Data and methods accessible to everyone
+    Teacher(){
+        cout<<"I am constructor\n";
+    }
     string name;
     string department;
     string subject;
@@ -17,7 +20,7 @@ public:                   //Data and methods accessible to everyone
     }
 };
 int main(){
-    Teacher t1;
+    Teacher t1;//constructor call
     t1.name="Pradeep";
     t1.department="CS";
     t1.subject="c++";
